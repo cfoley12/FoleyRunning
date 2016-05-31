@@ -3,23 +3,25 @@
   <head>
     <link type="text/css" rel="stylesheet" href="/static/stylesheet.css" />
     {% block head %}
-    <title>Michigan XC Ratings</title>
+    <title>505 Reports</title>
     {% endblock %}
   </head>
   <body>
     <div>
-      <h1> Michigan High School Cross Country Speed Ratings </h1>
+      <div class="head">
+        <dl>
+          <dd><a href = "/"><img src="/static/505reportslogo.png"</dd>
+        </dl>
+    </div>
       <nav>
-        <table>
-          <tr>
-            <td><a href="/"><img src="/static/Home.png" class="round"></a></td>
-            <td class="nav"><a href="/">Home</a></td>
-            <td class="nav"><a href="/about.html">About Us</a></td>
-            <td class="nav"><a href="/rankings.html">Speed Rankings</a></td>
-            <td class="nav"><a href="/calculator.html">Calculator</a></td>
-          </tr>
-        </table>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/sports.html">Sports</a></li>
+          <li><a href="/music.html">Music</a></li>
+        </ul>
       </nav>
+
     </div>
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="footer">
